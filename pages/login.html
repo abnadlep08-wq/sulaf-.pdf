@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - Sulaf.PDF</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+                    <i class="fas fa-book-open"></i>
+                    <h1>Sulaf.PDF</h1>
+                </a>
+            </div>
+            
+            <div class="user-actions">
+                <a href="../index.html" class="btn btn-outline">العودة للرئيسية</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- محتوى صفحة تسجيل الدخول -->
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</h2>
+                <p>مرحباً بعودتك! سجل دخولك للوصول إلى مكتبتك</p>
+            </div>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                    <input type="email" id="email" placeholder="example@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> كلمة المرور</label>
+                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                    <div class="password-toggle">
+                        <button type="button" id="togglePassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" id="remember">
+                        <span>تذكرني</span>
+                    </label>
+                    <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                </button>
+                
+                <div class="auth-divider">
+                    <span>أو</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="btn-social btn-google">
+                        <i class="fab fa-google"></i> تسجيل الدخول بـ Google
+                    </button>
+                    <button type="button" class="btn-social btn-twitter">
+                        <i class="fab fa-twitter"></i> تسجيل الدخول بـ Twitter
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="auth-side">
+            <div class="auth-side-content">
+                <h3>اكتشف عالم الفانتازيا</h3>
+                <p>انضم إلى آلاف القراء واستمتع بأفضل روايات الفانتازيا العربية</p>
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> الوصول إلى آلاف الروايات</li>
+                    <li><i class="fas fa-check-circle"></i> تحميل غير محدود بصيغة PDF</li>
+                    <li><i class="fas fa-check-circle"></i> نشر رواياتك الخاصة</li>
+                    <li><i class="fas fa-check-circle"></i> مساعد الذكاء الاصطناعي للكتابة</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../js/auth.js"></script>
+</body>
+</html>
